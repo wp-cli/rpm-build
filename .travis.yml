@@ -45,3 +45,8 @@ after_success:
     git config user.name "Travis CI"
     git config user.email "travis@travis-ci.org"
     git config push.default "current"
+    # Copy files into git and commit
+    cp ../rpm-src/noarch/wp-cli-*.noarch.rpm rpm
+    git add rpm
+    git commit -m "rpm build"
+    git push
