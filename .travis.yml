@@ -19,7 +19,7 @@ cache:
 
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -qq rpm rpmlint php-cli
+  - sudo apt-get install -qq rpm
 
 install:
   - wget -O wp-cli-rpm.spec https://raw.githubusercontent.com/wp-cli/wp-cli/master/utils/wp-cli-rpm.spec
