@@ -16,8 +16,6 @@ cache:
     - vendor
     - $HOME/.composer/cache
 
-language: php
-
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq rpm rpmlint php-cli
